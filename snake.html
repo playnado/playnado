@@ -6,13 +6,59 @@
   <meta name="description" content="Snake kostenlos online spielen – direkt im Browser, ohne Anmeldung!">
   <title>Snake – PlayNado</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-    header { background: #222; color: white; padding: 1em; text-align: center; }
-    nav a { margin: 0 1em; color: white; text-decoration: none; }
-    .game-container { padding: 2em; display: flex; flex-direction: column; align-items: center; }
-    iframe { width: 100%; max-width: 800px; height: 600px; border: none; border-radius: 10px; }
-    footer { background: #222; color: white; text-align: center; padding: 1em; margin-top: 2em; font-size: 0.9em; }
-    .adsense-placeholder { background: #ddd; height: 90px; width: 100%; max-width: 800px; text-align: center; line-height: 90px; color: #666; font-size: 14px; margin: 1em auto; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #6a0dad;
+      color: white;
+    }
+    header {
+      background: #4a0a8f;
+      color: white;
+      padding: 1.5em;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1em;
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .layout {
+      display: flex;
+    }
+    .ads-column {
+      width: 120px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1em;
+      text-align: center;
+      font-size: 0.8em;
+      color: #ccc;
+    }
+    .game-container {
+      flex: 1;
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 600px;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+    footer {
+      background: #4a0a8f;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
@@ -26,19 +72,27 @@
     </nav>
   </header>
 
-  <div class="game-container">
-    <div class="adsense-placeholder">Werbung hier platzieren</div>
+  <div class="layout">
+    <div class="ads-column">
+      <!-- Werbung links -->
+      Werbefläche
+    </div>
 
-    <iframe src="https://www.htmlgames.com/Embed/Snake/" allowfullscreen></iframe>
+    <div class="game-container">
+      <iframe src="https://www.htmlgames.com/Embed/Snake/" allowfullscreen></iframe>
+      <p style="margin-top: 1em; text-align: center; max-width: 800px;">
+        Spiele den Snake-Klassiker direkt im Browser – kostenlos und ohne Anmeldung!
+      </p>
+    </div>
 
-    <p style="margin-top: 1em; text-align: center; max-width: 800px;">
-      Spiele den Snake-Klassiker direkt im Browser – ohne Anmeldung, kostenlos und sofort startklar!
-    </p>
+    <div class="ads-column">
+      <!-- Werbung rechts -->
+      Werbefläche
+    </div>
   </div>
 
   <footer>
-    <p>&copy; 2025 PlayNado | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+    <p>&copy; 2025 PlayNado | <a href="impressum.html" style="color:#ffd700;">Impressum</a> | <a href="datenschutz.html" style="color:#ffd700;">Datenschutz</a></p>
   </footer>
 </body>
 </html>
-
